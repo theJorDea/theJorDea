@@ -21,7 +21,7 @@ PD-модель на датасете UCI Default of Credit Card Clients: лог
 
 `Python` `FastAPI` `Next.js` `PostgreSQL/TimescaleDB` `Redis` `Docker` `LightGBM` `CatBoost`
 
-### [JorDea-Website](https://github.com/theJorDea/JorDea-Website) — личный сайт
+### [JorDea-Website](https://github.com/theJorDea/JorDea-Website) — личный [сайт](https://jordea.vercel.app)
 Персональный сайт-портфолио: монохромный дизайн, плавный скролл и анимации. Деплой на Vercel.
 
 `TypeScript` `Next.js` `Motion` `Lenis` `Tailwind CSS`
