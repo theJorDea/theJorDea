@@ -1,49 +1,39 @@
-# Kirill Levin — ML / AI Developer
+# Кирилл Левин
 
-I build AI-powered applications, ML pipelines, computer vision prototypes, and full-stack tools.
+ML / Quant-разработчик. Студент ИТМО. Занимаюсь машинным обучением, финансовым риск-менеджментом и full-stack разработкой.
 
-Currently focused on:
-- Machine Learning and Deep Learning
-- LLM-powered applications
-- Computer Vision and gesture-based interfaces
-- Backend systems with Python / FastAPI
-- Financial ML and Quant Risk
+**Сейчас:** финансовый ML — рыночный риск (VaR/ES, GARCH), кредитный скоринг, алгоритмическая торговля.
 
-## Main Projects
+## Проекты
 
-### OpenCanvas
-AI-assisted graph and canvas system with FastAPI backend, WebSocket communication, LLM-based graph generation, Mermaid import, and MediaPipe gesture control.
+### [Riskforge](https://github.com/theJorDea/Riskforge) — рыночный риск
+Библиотека для оценки рыночного риска портфеля: VaR и Expected Shortfall (исторический, параметрический, Monte Carlo на нормальном и Student-t распределениях), волатильность EWMA (RiskMetrics) и GARCH(1,1) с оценкой через MLE, бэктестинг по Kupiec и Christoffersen, LSTM-прогноз волатильности в сравнении с GARCH. Исследовательские ноутбуки на данных SPY/QQQ/TLT/GLD за 2015–2025.
 
-Tech: Python, FastAPI, WebSocket, Pydantic, MediaPipe, Three.js, 3D Force Graph, LLM APIs.
+`Python` `NumPy` `pandas` `SciPy` `PyTorch` `pytest` `GitHub Actions`
 
-### Amazon ML Sentiment Analysis
-End-to-end NLP pipeline for sentiment classification of Amazon reviews.
+### [Credit-Scoring](https://github.com/theJorDea/Credit-Scoring) — кредитный скоринг
+PD-модель на датасете UCI Default of Credit Card Clients: логистическая регрессия и LightGBM с изотонической калибровкой вероятностей, WoE/IV-анализ признаков, скоркарта в формате PDO, интерпретация через SHAP. AUC 0.779, KS 0.42.
 
-Tech: Python, scikit-learn, SQLite, SQLAlchemy, NLTK, TF-IDF, Logistic Regression, Jupyter.
+`Python` `scikit-learn` `LightGBM` `SHAP`
 
-### Telegram AI Bot
-Telegram bot powered by Google Gemini API with command handlers, message processing, and error handling.
+### QuantForge — ИИ-агент для торговли на MOEX
+Автономный торговый агент для чемпионата ArenaGo: рыночные данные MOEX ISS, feature store с техническими индикаторами, классификатор рыночного режима, alpha-engine (правила + LightGBM/CatBoost), backtest с walk-forward валидацией, risk engine (kill-switch, лимиты экспозиции, drawdown), исполнение заявок через ArenaGo API и объяснение решений через LLM. *(приватный репозиторий)*
 
-Tech: Python, Telegram Bot API, Gemini API, async handlers.
+`Python` `FastAPI` `Next.js` `PostgreSQL/TimescaleDB` `Redis` `Docker` `LightGBM` `CatBoost`
 
-## Tech Stack
+### [JorDea-Website](https://github.com/theJorDea/JorDea-Website) — личный сайт
+Персональный сайт-портфолио: монохромный дизайн, плавный скролл и анимации. Деплой на Vercel.
 
-**Languages:** Python, TypeScript, JavaScript, SQL  
-**ML / DS:** PyTorch, scikit-learn, pandas, NumPy, matplotlib, Jupyter  
-**Backend:** FastAPI, REST API, WebSocket, SQLite, SQLAlchemy  
-**AI / LLM:** OpenAI API, Gemini API, prompt engineering, structured JSON outputs  
-**Computer Vision:** YOLO, MediaPipe, image processing  
-**Frontend:** React, HTML, CSS, Three.js  
-**Tools:** Git, Linux, Docker basics, GitHub Actions
+`TypeScript` `Next.js` `Motion` `Lenis` `Tailwind CSS`
 
-## What I am working on now
+## Стек
 
-- Building OpenCanvas as an AI-controlled visual workspace
-- Improving ML and DL fundamentals
-- Preparing for Quant Risk / ML internship roles
-- Developing portfolio projects with reproducible pipelines
+- **Языки:** Python, TypeScript, SQL
+- **ML/DS:** PyTorch, scikit-learn, LightGBM, pandas, NumPy
+- **Backend:** FastAPI, PostgreSQL, Redis, Docker
+- **Финансы:** VaR/ES, EWMA/GARCH, бэктестинг, кредитный скоринг, алготрейдинг
 
-## Contact
+## Контакты
 
-- GitHub: @theJorDea
+- GitHub: [@theJorDea](https://github.com/theJorDea)
 - Email: klevin3701@gmail.com
