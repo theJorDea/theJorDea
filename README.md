@@ -2,210 +2,141 @@
 
 # Kirill Levin
 
-### Machine Learning · Deep Learning · Quantitative Research
+### Machine Learning · Deep Learning · Computer Vision
 
-ITMO University student building machine learning systems, deep learning models, AI agents, and quantitative research tools.
+**AI Engineering student at ITMO University**
 
-[GitHub](https://github.com/theJorDea) · [Portfolio](https://jordea.vercel.app) · [Email](mailto:klevin3701@gmail.com)
+[Email](mailto:klevin3701@gmail.com) · [GitHub](https://github.com/theJorDea)
 
 </div>
 
 ## About me
 
-I am interested in building and training machine learning models rather than only integrating existing AI APIs.
+I work on applied machine learning and deep learning: preparing datasets, training models, analysing errors, and turning experiments into working software. I have a particular interest in computer vision, including object detection and image classification.
 
-My current interests include:
+My projects also include AI agents and tools for reproducible model evaluation. I care about data quality, meaningful baselines, and understanding where a model works — and where it fails.
 
-* transformer-based models and representation learning;
-* embeddings, semantic search, and retrieval systems;
-* multi-agent AI systems and long-term memory;
-* computer vision, object detection, and classification;
-* financial risk modelling, credit scoring, and algorithmic trading.
+## Applied computer vision
 
-I enjoy reading research papers, reproducing ideas in PyTorch, running controlled experiments, and turning research prototypes into usable software.
+Worked on fruit and vegetable quality assessment for **VkusVill**, using detection and classification models to identify defects and assess freshness.
+
+The work involved YOLO model training and tuning, annotation review, class-imbalance handling, and error analysis. I evaluated precision, recall, and F1 by class to guide experiments and improve performance on underrepresented categories.
+
+*Project code and datasets are private.*
+
+`Python` `PyTorch` `YOLO` `Object Detection` `Image Classification`
 
 ## Selected projects
 
-### [Jevio Fuse](https://github.com/theJorDea/JevioFuseHack) — local multi-agent coding system
+### [OpenCanvas](https://github.com/theJorDea/OpenCanvas) — gesture-controlled 3D graphs
 
-Open-source coding agent that explores software repositories, delegates work between specialised agents, reviews generated changes, and preserves relevant project context between sessions.
+An interactive graph visualisation tool with camera control through hand tracking. Combines MediaPipe gesture recognition, a FastAPI backend, WebSocket updates, and a browser-based 3D renderer. Supports graph generation from text prompts and Mermaid import.
 
-The system includes Architect, Coder, Reviewer, Judge, and Orchestrator roles, semantic memory with vector retrieval and a knowledge graph, MCP integrations, permission-controlled tools, and OpenTelemetry tracing.
+`Python` `MediaPipe` `OpenCV` `FastAPI` `WebSockets` `Three.js`
 
-The project currently includes 152 automated tests and a dedicated memory benchmark.
+### [Jevio Fuse](https://github.com/theJorDea/JevioFuseHack) — coding agents with project memory
 
-`TypeScript` `Node.js` `AI Agents` `LLM` `Vector Search` `Knowledge Graph` `MCP` `OpenTelemetry`
+A local multi-agent coding system that explores repositories, plans changes, and reviews generated code. Preserves project context between sessions through semantic memory, vector retrieval, and a knowledge graph, with MCP tool integrations and execution tracing.
 
-### [Riskforge](https://github.com/theJorDea/Riskforge) — market risk research library
+`TypeScript` `Node.js` `LLM Agents` `Vector Search` `MCP`
 
-Library for portfolio market-risk estimation and volatility modelling.
+### [DPD](https://github.com/theJorDea/DPD) — efficient digital predistortion
 
-Implemented historical, parametric, and Monte Carlo Value at Risk and Expected Shortfall using normal and Student-t distributions, EWMA volatility, GARCH(1,1) estimation with maximum likelihood, and Kupiec and Christoffersen backtesting.
+A research project on reducing power-amplifier distortion with a compact spline model. Includes reproducible evaluation, streaming inference, and fixed-point software implementations. Current results are evaluated against a software amplifier model; physical hardware validation remains future work.
 
-The project also contains research notebooks comparing LSTM-based volatility forecasting with GARCH on SPY, QQQ, TLT, and GLD market data from 2015–2025.
+`Python` `Numerical Modelling` `Signal Processing`
 
-`Python` `NumPy` `pandas` `SciPy` `PyTorch` `pytest` `GitHub Actions`
+### [Credit Scoring](https://github.com/theJorDea/Credit-Scoring) — classification and probability calibration
 
-### [Credit Scoring](https://github.com/theJorDea/Credit-Scoring) — probability of default modelling
-
-Credit-risk modelling pipeline based on the UCI Default of Credit Card Clients dataset.
-
-Implemented logistic regression and LightGBM models, isotonic probability calibration, Weight of Evidence and Information Value analysis, PDO-based scorecard construction, and SHAP model interpretation.
-
-Model performance: ROC AUC 0.779 and KS statistic 0.42.
+A default-probability modelling pipeline on the UCI credit-card dataset: feature engineering, logistic regression and LightGBM baselines, isotonic calibration, and SHAP interpretation. The calibrated model achieves a test ROC-AUC of **0.779**.
 
 `Python` `scikit-learn` `LightGBM` `SHAP` `pandas`
 
-### QuantForge — autonomous trading agent for MOEX
+**Also:** [Riskforge](https://github.com/theJorDea/Riskforge) — a Python library for volatility modelling and risk estimation, with statistical backtests and experiments comparing LSTM forecasts with GARCH baselines.
 
-Developed an autonomous trading system for the ArenaGo competition.
+## Technical toolkit
 
-The system included MOEX ISS market-data ingestion, a feature store with technical indicators, market-regime classification, an alpha engine based on rules and gradient boosting, walk-forward backtesting, portfolio-risk controls, order execution through the ArenaGo API, and LLM-generated explanations of trading decisions.
+| Area | Tools and methods |
+| --- | --- |
+| Languages | Python, TypeScript, SQL |
+| ML & deep learning | PyTorch, scikit-learn, LightGBM; training, feature engineering, model evaluation |
+| Computer vision | YOLO, OpenCV, MediaPipe; object detection, image classification |
+| Data & experiments | NumPy, pandas, SciPy, Jupyter; error analysis, class imbalance, probability calibration |
+| AI systems | LLM agents, embeddings, vector retrieval, semantic memory, MCP |
+| Engineering | FastAPI, Node.js, Git, Docker, pytest, GitHub Actions |
 
-Private repository.
+## Get in touch
 
-`Python` `FastAPI` `LightGBM` `CatBoost` `PostgreSQL` `TimescaleDB` `Redis` `Docker` `Next.js`
+Open to collaboration on applied ML, deep learning, and computer vision projects — especially model development, experimentation, and evaluation.
 
-### [JorDea Website](https://github.com/theJorDea/JorDea-Website) — [portfolio website](https://jordea.vercel.app)
-
-Personal portfolio website with a monochrome interface, smooth scrolling, page transitions, and interactive animations. Deployed on Vercel.
-
-`TypeScript` `Next.js` `Tailwind CSS` `Motion` `Lenis` `Vercel`
-
-## Applied computer vision experience
-
-Worked on fruit and vegetable defect and freshness detection for VkusVill.
-
-Improved object detection and classification models through dataset analysis, annotation review, class-imbalance handling, model tuning, and detailed evaluation of per-class precision and recall.
-
-The work included experiments with YOLO-based detection models, freshness classification, error analysis, and development of approaches for improving weak and underrepresented classes.
-
-## Technical skills
-
-* **Languages:** Python, TypeScript, SQL
-* **Deep learning:** PyTorch, Transformers, representation learning, contrastive learning
-* **Machine learning:** scikit-learn, LightGBM, CatBoost, feature engineering, model evaluation
-* **Computer vision:** object detection, image classification, YOLO, dataset analysis
-* **AI systems:** LLM agents, semantic memory, embeddings, vector retrieval, RAG, MCP
-* **Backend and infrastructure:** FastAPI, Node.js, PostgreSQL, Redis, Docker, GitHub Actions
-* **Quantitative finance:** VaR, Expected Shortfall, EWMA, GARCH, credit scoring, backtesting
-
-## Collaboration
-
-I am interested in collaborating on focused research and engineering projects involving:
-
-* deep learning and transformer architectures;
-* representation learning and multimodal models;
-* AI agents, RAG, and long-term memory;
-* computer vision;
-* ML evaluation and reproducible experimentation;
-* quantitative machine learning.
-
-Contact me if you are working on a technically challenging project and need help with model development, experimentation, evaluation, or ML engineering.
+[klevin3701@gmail.com](mailto:klevin3701@gmail.com)
 
 ---
 
-<div align="center">
+<details>
+<summary><strong>На русском</strong></summary>
 
-# Кирилл Левин
+## Кирилл Левин
 
-### Machine Learning · Deep Learning · Quantitative Research
+**Студент ИТМО, программа AI Engineering.**
 
-Студент ИТМО. Разрабатываю ML-системы, обучаю deep learning модели, создаю AI-агентов и инструменты для количественных исследований.
+Занимаюсь прикладным машинным обучением и deep learning: готовлю данные, обучаю модели, анализирую ошибки и превращаю эксперименты в работающие приложения. Особенно интересуюсь компьютерным зрением — детекцией объектов и классификацией изображений.
 
-[GitHub](https://github.com/theJorDea) · [Портфолио](https://jordea.vercel.app) · [Email](mailto:klevin3701@gmail.com)
+Также разрабатываю AI-агентов и инструменты для воспроизводимой оценки моделей. В работе уделяю внимание качеству данных, сравнению с базовыми решениями и пониманию ограничений моделей.
 
-</div>
+### Опыт в компьютерном зрении
 
-## Обо мне
+Работал над оценкой качества фруктов и овощей для **ВкусВилла**: детекцией дефектов и определением свежести с помощью моделей детекции и классификации.
 
-Мне интересно самостоятельно разрабатывать и обучать модели машинного обучения, а не только подключать готовые AI API.
+Обучал и настраивал YOLO-модели, проверял разметку, работал с дисбалансом классов и анализировал ошибки. Оценивал precision, recall и F1 по отдельным классам, чтобы выбирать направления экспериментов и улучшать качество на малочисленных категориях.
 
-Основные направления моих интересов:
+*Код проекта и датасеты находятся в закрытом доступе.*
 
-* трансформеры и representation learning;
-* эмбеддинги, семантический поиск и retrieval-системы;
-* мультиагентные AI-системы и долговременная память;
-* computer vision, детекция объектов и классификация;
-* моделирование финансовых рисков, кредитный скоринг и алгоритмическая торговля.
+`Python` `PyTorch` `YOLO` `Детекция объектов` `Классификация изображений`
 
-Я читаю научные статьи, воспроизвожу исследовательские идеи в PyTorch, провожу контролируемые эксперименты и превращаю исследовательские прототипы в работающие программные системы.
+### Избранные проекты
 
-## Основные проекты
+#### [OpenCanvas](https://github.com/theJorDea/OpenCanvas) — 3D-графы с управлением жестами
 
-### [Jevio Fuse](https://github.com/theJorDea/JevioFuseHack) — локальная мультиагентная система для программирования
+Инструмент для интерактивной визуализации графов с управлением камерой через отслеживание рук. Объединяет MediaPipe, FastAPI, обмен событиями по WebSocket и 3D-визуализацию в браузере. Поддерживает генерацию графов по текстовому запросу и импорт Mermaid.
 
-Open-source coding-агент, который исследует программные репозитории, распределяет задачи между специализированными агентами, проверяет внесённые изменения и переносит релевантный контекст между рабочими сессиями.
+`Python` `MediaPipe` `OpenCV` `FastAPI` `WebSockets` `Three.js`
 
-Система включает роли Architect, Coder, Reviewer, Judge и Orchestrator, семантическую память с векторным поиском и графом знаний, MCP-интеграции, контролируемый доступ к инструментам и трассировку через OpenTelemetry.
+#### [Jevio Fuse](https://github.com/theJorDea/JevioFuseHack) — coding-агенты с памятью проекта
 
-Проект содержит 152 автоматических теста и отдельный benchmark для проверки работы памяти.
+Локальная мультиагентная система, которая исследует репозитории, планирует изменения и проверяет сгенерированный код. Сохраняет контекст между сессиями через семантическую память, векторный поиск и граф знаний. Включает MCP-интеграции и трассировку выполнения.
 
-`TypeScript` `Node.js` `AI Agents` `LLM` `Vector Search` `Knowledge Graph` `MCP` `OpenTelemetry`
+`TypeScript` `Node.js` `LLM Agents` `Vector Search` `MCP`
 
-### [Riskforge](https://github.com/theJorDea/Riskforge) — библиотека для исследования рыночного риска
+#### [DPD](https://github.com/theJorDea/DPD) — цифровое предыскажение с низкой вычислительной сложностью
 
-Библиотека для оценки рыночного риска портфеля и моделирования волатильности.
+Исследовательский проект по компенсации искажений усилителя мощности с помощью компактной сплайновой модели. Реализованы воспроизводимая оценка, потоковое вычисление и программные версии с фиксированной точкой. Текущие результаты получены на программной модели усилителя; проверка на физическом оборудовании ещё предстоит.
 
-Реализованы исторический, параметрический и Monte Carlo Value at Risk и Expected Shortfall с нормальным распределением и распределением Стьюдента, волатильность EWMA, модель GARCH(1,1) с оценкой параметров методом максимального правдоподобия, а также бэктесты Купица и Кристофферсена.
+`Python` `Численное моделирование` `Обработка сигналов`
 
-Проект также содержит исследовательские ноутбуки со сравнением прогнозирования волатильности через LSTM и GARCH на данных SPY, QQQ, TLT и GLD за 2015–2025 годы.
+#### [Credit Scoring](https://github.com/theJorDea/Credit-Scoring) — классификация и калибровка вероятностей
 
-`Python` `NumPy` `pandas` `SciPy` `PyTorch` `pytest` `GitHub Actions`
-
-### [Credit Scoring](https://github.com/theJorDea/Credit-Scoring) — моделирование вероятности дефолта
-
-Пайплайн кредитного скоринга на основе датасета UCI Default of Credit Card Clients.
-
-Реализованы логистическая регрессия и LightGBM, изотоническая калибровка вероятностей, анализ Weight of Evidence и Information Value, построение скоркарты в формате PDO и интерпретация модели через SHAP.
-
-Качество модели: ROC AUC 0.779 и KS 0.42.
+Пайплайн оценки вероятности дефолта на датасете UCI: подготовка признаков, логистическая регрессия и LightGBM, изотоническая калибровка и интерпретация через SHAP. ROC-AUC калиброванной модели на тестовой выборке — **0.779**.
 
 `Python` `scikit-learn` `LightGBM` `SHAP` `pandas`
 
-### QuantForge — автономный торговый агент для MOEX
+**Также:** [Riskforge](https://github.com/theJorDea/Riskforge) — Python-библиотека для моделирования волатильности и оценки рисков со статистическими бэктестами и сравнением прогнозов LSTM с GARCH.
 
-Разработал автономную торговую систему для соревнования ArenaGo.
+### Технический стек
 
-Система включала загрузку рыночных данных через MOEX ISS, feature store с техническими индикаторами, классификацию рыночного режима, alpha-engine на основе правил и градиентного бустинга, walk-forward бэктестинг, управление портфельными рисками, исполнение заявок через ArenaGo API и объяснение торговых решений через LLM.
+| Направление | Инструменты и методы |
+| --- | --- |
+| Языки | Python, TypeScript, SQL |
+| ML и deep learning | PyTorch, scikit-learn, LightGBM; обучение, подготовка признаков, оценка моделей |
+| Компьютерное зрение | YOLO, OpenCV, MediaPipe; детекция объектов, классификация изображений |
+| Данные и эксперименты | NumPy, pandas, SciPy, Jupyter; анализ ошибок, дисбаланс классов, калибровка вероятностей |
+| AI-системы | LLM-агенты, эмбеддинги, векторный поиск, семантическая память, MCP |
+| Разработка | FastAPI, Node.js, Git, Docker, pytest, GitHub Actions |
 
-Приватный репозиторий.
+### Связаться со мной
 
-`Python` `FastAPI` `LightGBM` `CatBoost` `PostgreSQL` `TimescaleDB` `Redis` `Docker` `Next.js`
+Открыт к совместным проектам по прикладному ML, deep learning и компьютерному зрению: разработке моделей, экспериментам и оценке качества.
 
-### [JorDea Website](https://github.com/theJorDea/JorDea-Website) — [сайт-портфолио](https://jordea.vercel.app)
+[klevin3701@gmail.com](mailto:klevin3701@gmail.com)
 
-Персональный сайт-портфолио с монохромным интерфейсом, плавным скроллом, переходами между страницами и интерактивными анимациями. Развёрнут на Vercel.
-
-`TypeScript` `Next.js` `Tailwind CSS` `Motion` `Lenis` `Vercel`
-
-## Опыт в computer vision
-
-Работал над системой детекции дефектов и определения свежести фруктов и овощей для ВкусВилла.
-
-Улучшал модели детекции и классификации через анализ датасета, проверку разметки, работу с дисбалансом классов, настройку моделей и детальный анализ precision и recall по отдельным категориям.
-
-Работа включала эксперименты с YOLO-моделями, классификацию свежести продуктов, анализ ошибок и разработку подходов для улучшения качества на слабых и малочисленных классах.
-
-## Технический стек
-
-* **Языки:** Python, TypeScript, SQL
-* **Deep learning:** PyTorch, Transformers, representation learning, contrastive learning
-* **Machine learning:** scikit-learn, LightGBM, CatBoost, feature engineering, оценка моделей
-* **Computer vision:** детекция объектов, классификация изображений, YOLO, анализ датасетов
-* **AI-системы:** LLM-агенты, семантическая память, эмбеддинги, vector retrieval, RAG, MCP
-* **Backend и инфраструктура:** FastAPI, Node.js, PostgreSQL, Redis, Docker, GitHub Actions
-* **Количественные финансы:** VaR, Expected Shortfall, EWMA, GARCH, кредитный скоринг, бэктестинг
-
-## Коллаборации
-
-Мне интересны совместные исследовательские и инженерные проекты в следующих областях:
-
-* deep learning и архитектуры трансформеров;
-* representation learning и мультимодальные модели;
-* AI-агенты, RAG и долговременная память;
-* computer vision;
-* оценка ML-моделей и воспроизводимые эксперименты;
-* количественное машинное обучение.
-
-Можно написать мне, если вы работаете над технически сложным проектом и вам нужна помощь с разработкой моделей, проведением экспериментов, оценкой качества или ML-инженерией.
+</details>
