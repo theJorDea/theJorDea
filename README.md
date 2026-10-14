@@ -18,7 +18,7 @@ My projects also include AI agents and tools for reproducible model evaluation. 
 
 ## Applied computer vision
 
-Worked on fruit and vegetable quality assessment for **VkusVill**, using detection and classification models to identify defects and assess freshness.
+Worked on a computer vision project for visual food quality assessment, including defect detection and image classification.
 
 The work involved YOLO model training and tuning, annotation review, class-imbalance handling, and error analysis. I evaluated precision, recall, and F1 by class to guide experiments and improve performance on underrepresented categories.
 
@@ -86,7 +86,7 @@ Open to collaboration on applied ML, deep learning, and computer vision projects
 
 ### Опыт в компьютерном зрении
 
-Работал над оценкой качества фруктов и овощей для **ВкусВилла**: детекцией дефектов и определением свежести с помощью моделей детекции и классификации.
+Работал над проектом компьютерного зрения для визуальной оценки качества продуктов: обнаружением дефектов и классификацией изображений.
 
 Обучал и настраивал YOLO-модели, проверял разметку, работал с дисбалансом классов и анализировал ошибки. Оценивал precision, recall и F1 по отдельным классам, чтобы выбирать направления экспериментов и улучшать качество на малочисленных категориях.
 
